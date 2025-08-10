@@ -1,15 +1,16 @@
 package com.shobhit.loan_system.model.entity;
 
 import jakarta.persistence.*;
-import org.springframework.data.annotation.Id;
+import lombok.Data;
 
 @Entity
 @Table(name = "customers")
+@Data
 public class Customer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String cust_id;
+    private Long cust_id;
 
     @Column(nullable = false)
     private String cust_name;

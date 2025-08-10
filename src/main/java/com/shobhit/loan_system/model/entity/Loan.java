@@ -3,11 +3,13 @@ package com.shobhit.loan_system.model.entity;
 import com.shobhit.loan_system.model.enums.LoanStatus;
 import com.shobhit.loan_system.model.enums.LoanType;
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "loans")
+@Data
 public class Loan {
 
     @Id
