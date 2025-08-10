@@ -18,6 +18,6 @@ public class Agent {
     @Column(name = "manager_id")
     private Long manager_id;
 
-    @Column(name = "is_available")
-    private boolean is_Available = true;
+    @Column(name = "available")
+    private boolean available = true;
 }

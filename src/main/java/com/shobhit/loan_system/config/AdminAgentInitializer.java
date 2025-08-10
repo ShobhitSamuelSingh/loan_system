@@ -19,7 +19,7 @@ public class AdminAgentInitializer implements CommandLineRunner {
         if (agentRepository.count() == 0) {
             Agent admin = new Agent();
             admin.setAgent_name("ADMIN");
-            admin.set_Available(true);
+            admin.setAvailable(true);
             admin.setManager_id(null);
             Agent savedAdmin = agentRepository.save(admin);
             savedAdmin.setManager_id(savedAdmin.getAgent_id());
